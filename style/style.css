@@ -1,79 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
-
-.quicksand-fonts {
-  font-family: "Quicksand", serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-/* sherd style */
+/* shard style */
 .background-color{
-  background-color: #FFFFFF;
-}
-.color-one{
-  color:  #FEA301;
-}
-.color-two{
-  color: #01ACFD;
-}
-.color-three{
-  color: #5D58EF;
-}
-.font-weight{
-  font-weight: 700;
+  background-image: url(../assets/bg.png);
 }
 
-/* header style */
-.navbar {
+.card-h1 {
+  text-align: center;
+  font-size: larger;
+}
+
+.card-section {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #ffffff;
-  padding: 10px 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
-.navbar .logo {
+.set-card {
   display: flex;
-  align-items: center;
+}
+.our-h1 {
+  text-align: center;
+  font-size: larger;
+}
+.our-name {
+  text-align: center;
+  font-size: xx-large;
 }
 
-.navbar .logo img {
-  height: 40px;
-  margin-right: 10px;
-}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar-start {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
 
-.navbar .logo span {
-  font-size: 24px;
-  font-weight: bold;
-  color: #000;
-}
+  /* Adjust logo size and keep it on the left */
+  .navbar-start img {
+    max-width: 100px;
+  }
 
-.navbar .menu {
-  display: flex;
-  gap: 32px;
-}
+  /* Ensure dropdown is aligned to the right */
+  .navbar-start .dropdown {
+    margin-left: auto;
+  }
 
-.navbar .menu a {
-  text-decoration: none;
-}
+  /* Hide the SCHOOL text  */
+  .navbar-start a {
+    display: none;
+  }
 
-.navbar .contact-btn {
-  background-color: #ffa500;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-}
+  /* Make dropdown content hidden by default */
+  .dropdown-content {
+    display: none;
+  }
 
-.navbar .contact-btn:hover {
-  background-color: #ff8c00;
-}
+  /* Show dropdown content on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 
+  .hero-content {
+    flex-direction: column-reverse;
+  }
+
+  .hero img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+  }
+
+  section.flex {
+    flex-direction: column;
+  }
+
+  .card {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 768px) {
+  .nav-sect {
+    border: 2px solid yellow;
+  }
+}

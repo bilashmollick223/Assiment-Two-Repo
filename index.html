@@ -1,39 +1,344 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./style/style.css">
-</head>
-<body class="quicksand-fonts">
-  <!-- start header -->
-  <header class="background-color">
-    <div class="navbar">
-        <div class="logo">
-            <img src="./assets/logo.png" alt="Logo">
-            <span>SCHOOL</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>School</title>
+    <link rel="stylesheet" href="./style/style.css">
+  </head>
+
+  <body>
+    <header class="nav-sect background-color">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <img src="./assets/logo.png" alt="School Logo" />
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            >
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Facilities</a></li>
+              <li><a>Admission</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="menu font-weight">
-            <a href="#"><span class="color-one">Home</span></a>
-            <a href="#"><span class="color-two">About</span></a>
-            <a href="#"><span class="color-two">Facilities</span></a>
-            <a href="#"><span class="color-three">Admission</span></a>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li class="text-orange-500"><a>Home</a></li>
+            <li class="text-teal-500"><a>About</a></li>
+            <li class="text-green-500"><a>Facilities</a></li>
+            <li class="text-blue-500"><a>Admission</a></li>
+          </ul>
         </div>
-        <button class="contact-btn">Contact</button>
-    </div>
-</header>
-  <!-- end header -->
-   <!-- start main -->
-  <main>
+        <div class="navbar-end hidden md:flex">
+          <a class="btn btn-warning">Contact</a>
+        </div>
+      </div>
+    </header>
 
-  </main>
-  <!-- end main -->
+    <main>
+      <section>
+        <div>
+          <marquee>Empowering students from small age towards vision</marquee>
+        </div>
+      </section>
+      <!-- Banner Section -->
+      <section>
+        <div>
+          <div class="hero min-h-screen ">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+              <img src="./assets/hero-kids.png" alt="Hero Kids" />
+              <div>
+                <h1 class="text-5xl text-center sm:text-left">
+                  <span class="text-yellow-500">Empowering</span> <br />
+                  students from small <br />
+                  age <span class="text-sky-500">towards vision</span>
+                </h1>
+                <p class="py-6 text-center sm:text-left">
+                  With the courage, Confidence, Creativity and Compassion to
+                  make their Unique Contribution in a Diverse and Dynamic World.
+                </p>
 
-  <!-- start footer -->
-  <footer>
+                <button
+                  class="btn btn-neutral mx-auto lg:mx-0 block lg:inline-block"
+                >
+                  Enroll Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  </footer>
-  <!-- end footer -->
-</body>
+      <!-- Card Section with Flexbox Centering for Mobile -->
+      <section
+        style="background-image: url('image/bg.png'); background-size: cover "
+      >
+        <h1 class="card-h1 font-bold text-center mb-8">Standard Curriculum</h1>
+
+        <div class="flex flex-col lg:flex-row 	 justify-center gap-10">
+          <!-- Card 1 -->
+          <div class="w-full sm:w-80 bg-slate-200 lg:w-96">
+            <div class="card bg-base-100 shadow-xl">
+              <figure class="px-10 pt-10">
+                <img src="./assets/kinder.png" alt="Kinder" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title">Kinder (3-6 Years)</h2>
+                <p>
+                  Cum sociis natoque penatibus et magnis dis parturient montes,
+                  nascetur ridiculus mus dis parturient.
+                </p>
+                <div class="card-actions">
+                  <button class="btn py-5 text-teal-500">Read More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="w-full bg-lime-200	 sm:w-80 lg:w-96">
+            <div class="card bg-base-100 shadow-xl">
+              <figure class="px-10 pt-10">
+                <img
+                  src="./assets/elementary.png"
+                  alt="Primary"
+                  class="rounded-xl"
+                />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title">Primary (6-12 Years)</h2>
+                <p>
+                  Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
+                  auctor. Curabitur blandit tempus porttitor.
+                </p>
+                <div class="card-actions">
+                  <button class="btn py-5 text-teal-500">Read More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="w-full sm:w-80 bg-green-200	 lg:w-96">
+            <div class="card bg-base-100 shadow-xl">
+              <figure class="px-10 pt-10">
+                <img
+                  src="./assets/middle.png"
+                  alt="Secondary"
+                  class="rounded-xl"
+                />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title">Secondary (12-18 Years)</h2>
+                <p>
+                  Donec ullamcorper nulla non metus auctor fringilla. Aenean eu
+                  leo quam. Pellentesque ornare sem lacinia quam venenatis.
+                </p>
+                <div class="card-actions">
+                  <button class="btn py-5 text-teal-500">Read More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="flex justify-center gap-4 py-4">
+        <!-- Button with '<' symbol -->
+        <button class="btn btn-circle bg-yellow-500 text-white hidden lg:block">
+          <span class="text-2xl">&lt;</span>
+        </button>
+
+        <!-- Button with '>' symbol -->
+        <button class="btn btn-circle bg-yellow-500 text-white hidden lg:block">
+          <span class="text-2xl">&gt;</span>
+        </button>
+      </div>
+      <!-- our stores -->
+      <section
+        class="bg-cover bg-center"
+        style="
+          background-image: url('image/bg.png');
+          background-color: rgba(255, 255, 204, 0.5);
+        "
+      >
+        <div class="font-bold text-center py-6">
+          <h1 class="our-name text-black">Our Stories</h1>
+        </div>
+        <div class="set-card">
+          <div class="mx-14 hidden sm:block">
+            <!-- First Card - Larger Card at the top -->
+            <div class="w-[530px] h-[630px]">
+              <div class="card bg-base-100 w-full h-full shadow-xl">
+                <figure>
+                  <img
+                    src="./assets/story-1.png"
+                    alt="Shoes"
+                    class="w-full h-[350px] object-cover"
+                  />
+                </figure>
+                <div class="card-body h-[280px]">
+                  <div class="badge badge-outline">Fashion</div>
+                  <h2 class="card-title">
+                    A fun toddler coloring training on classroom
+                  </h2>
+                  <p>
+                    Beautiful branding for changes by Never Now in Australia.
+                    Changes is a platform for open discussion in an inclusive
+                    and collaborative environment, providing the...
+                  </p>
+                  <div class="card-actions justify-end"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap justify-center gap-4">
+            <!-- First Card -->
+            <div class="w-[48%] sm:w-[290px] h-[301px]">
+              <div class="card bg-base-100 shadow-xl w-full h-full">
+                <figure>
+                  <img
+                    src="./assets/story-2.png"
+                    alt="Story 2"
+                    class="w-full h-[177px] object-cover"
+                  />
+                </figure>
+                <div class="card-body h-[124px]">
+                  <p>
+                    Beautiful branding for changes by Never Now in Australia.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Second Card -->
+            <div class="w-[48%] sm:w-[290px] h-[301px]">
+              <div class="card bg-base-100 shadow-xl w-full h-full">
+                <figure>
+                  <img
+                    src="./assets/story-3.png"
+                    alt="Story 3"
+                    class="w-full h-[177px] object-cover"
+                  />
+                </figure>
+                <div class="card-body h-[124px]">
+                  <p>
+                    Beautiful branding for changes by Never Now in Australia.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Third Card -->
+            <div class="w-[48%] sm:w-[290px] h-[301px]">
+              <div class="card bg-base-100 shadow-xl w-full h-full">
+                <figure>
+                  <img
+                    src="./assets/story-4.png"
+                    alt="Story 4"
+                    class="w-full h-[177px] object-cover"
+                  />
+                </figure>
+                <div class="card-body h-[124px]">
+                  <p>
+                    Beautiful branding for changes by Never Now in Australia.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Fourth Card -->
+            <div class="w-[48%] sm:w-[290px] h-[301px]">
+              <div class="card bg-base-100 shadow-xl w-full h-full">
+                <figure>
+                  <img
+                    src="./assets/story-5.png"
+                    alt="Story 5"
+                    class="w-full h-[177px] object-cover"
+                  />
+                </figure>
+                <div class="card-body h-[124px]">
+                  <p>
+                    Beautiful branding for changes by Never Now in Australia.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center py-4">
+          <button
+            class="bg-black text-white py-2 px-4 rounded hover:bg-gray-800"
+          >
+            View All
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <footer class="footer bg-sky-500 text-neutral-content p-10">
+          <nav>
+            <div>
+              <img src="./assets/logo.png" alt="logo" />
+              <h6 class="footer-title">Kids EducationKids Education</h6>
+            </div>
+
+            <a class="link link-hover"
+              >Pizza ipsum dolor meat lovers buffalo. <br />
+              Deep dolor roll melted bacon Bianca pan <br />
+              bacon pineapple Aussie. Mayo rib sauce <br />Hawaiian meatball.</a
+            >
+          </nav>
+          <nav>
+            <h6 class="footer-title">About School</h6>
+            <a class="link link-hover"> HOME</a>
+            <a class="link link-hover">About</a>
+            <a class="link link-hover">Facilities</a>
+            <a class="link link-hover">Admission</a>
+          </nav>
+          <nav>
+            <h6 class="footer-title">Keep In Touch</h6>
+            <nav>
+              <div class="grid grid-flow-col gap-4">
+                <img src="image/fb.png" alt="facebook" />
+                <img src="image/google+.png" alt="facebook" />
+                <img src="image/dribble.png" alt="facebook" />
+                <img src="image/twitter.png" alt="facebook" />
+              </div>
+            </nav>
+          </nav>
+        </footer>
+      </div>
+    </footer>
+  </body>
 </html>
